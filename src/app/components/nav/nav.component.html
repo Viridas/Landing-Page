@@ -1,0 +1,71 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active">
+	<li [ngbNavItem]="1" class="search-class">
+		<app-search></app-search>
+	</li>
+	<div class="collum-container">
+		<div class="item mt-3">
+			<li [ngbNavItem]="2">
+				<button ngbNavLink class="for-name">Clothing store</button>
+			</li>
+		</div>
+		<div style="margin-top: 40px;">
+			<div class="row-container">
+				<div class="item">
+					<li [ngbNavItem]="3">
+						<button ngbNavLink class="item-text">Shop All</button>
+					</li>
+				</div>
+				<div class="item">
+					<li [ngbNavItem]="4">
+						<button ngbNavLink class="item-text">Our Story</button>
+					</li>
+				</div>
+				<div class="item">
+					<li [ngbNavItem]="5">
+						<button ngbNavLink class="item-text">Our Craft</button>
+					</li>
+				</div>
+				<div class="item">
+					<li [ngbNavItem]="6">
+						<button ngbNavLink class="item-text">Gift Card</button>
+					</li>
+				</div>
+				<div class="item">
+					<li [ngbNavItem]="7">
+						<button ngbNavLink class="item-text">Contact</button>
+					</li>
+				</div>
+			</div>
+		</div>
+	</div>
+	<li [ngbNavItem]="8">
+		<button ngbNavLink class="icons-grose">
+			<img src="assets/Photos/Facebook-icon.png" alt="Facebook" class="icons-grose">
+		</button>
+	</li>
+	<li [ngbNavItem]="9">
+		<button ngbNavLink class="icons-grose">
+			<img src="assets/Photos/Instagram-icon.png" alt="Instagram" class="icons-grose">
+		</button>
+	</li>
+	<li [ngbNavItem]="10">
+		<button ngbNavLink class="icons-grose">
+			<img src="assets/Photos/Twitter-icon.png" alt="Twitter" class="icons-grose">
+		</button>
+	</li>
+	<li [ngbNavItem]="11">
+		<button ngbNavLink class="icons-grose">
+			<img src="assets/Photos/Pinteresyt-icon.png" alt="Pinterest" class="icons-grose">
+		</button>
+	</li>
+	<li [ngbNavItem]="12">
+		<button ngbNavLink>Account</button>
+		<ng-template ngbNavContent>
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="13">
+		<button ngbNavLink>Shopping Basket</button>
+		<ng-template ngbNavContent>
+		</ng-template>
+	</li>
+</ul>

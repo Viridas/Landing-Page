@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+.search-class {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.for-name {
+    font-family: 'Playwrite NZ', sans-serif;
+    color: firebrick;
+    font-size: 24px;
+}
+
+.collum-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: 12.5%;
+}
+
+.row-container {
+    display: flex;
+}
+
+.icons-grose {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.item {
+    margin-right: 30px;
+}
+
+.item-text {
+    color: black;
+}

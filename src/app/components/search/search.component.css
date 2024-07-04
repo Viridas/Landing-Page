@@ -1,0 +1,31 @@
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    height: 30px;
+    width: 35px;
+  }
+  
+  .form-control {
+    padding-left: 40px;
+    border: none;
+    border-bottom: 1px solid #A0522D;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .form-control:focus {
+    border-color: #A0522D;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .form-control:hover {
+    border-bottom: 2px solid #A0522D; /* Зміна товщини підкреслення на hover */
+  }
+  
