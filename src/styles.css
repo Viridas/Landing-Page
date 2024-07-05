@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/animate.css/animate.min.css';
+
+.custom-bc {
+    max-width: 350px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    opacity: 0.65;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev {
+    left: 75px; /* Встановлюємо відступ від лівого краю */
+}
+
+.carousel-control-next {
+    right: 79px; /* Встановлюємо відступ від правого краю */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 15px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('assets/Photos/Arrow.png');
+}
+
+.carousel-control-next-icon {
+    background-image: url('assets/Photos/Arrow_2.png');
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 0.5;
+}

@@ -1,0 +1,51 @@
+.shoping-basket {
+    border: 0px;
+    background-color: #ffffff;
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 12px;
+    color: firebrick;
+}
+
+
+.custom-arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    margin-top: 0;
+    padding: 4px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background-color: black;
+}
+
+.header-class {
+    background-color: black;
+    height: 100px;
+}
+
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%; /* або інше значення ширини */
+}
+
+.title-class {
+    margin-left: 70px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-bc {
+    background-color: blue;
+    width: 300px; /* Примірний розмір для тестування */
+}

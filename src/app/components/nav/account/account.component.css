@@ -1,0 +1,58 @@
+button[ngbDropdownToggle]::after {
+    display: none;
+  }
+
+.icons-grose {
+    width: 5px;
+    height: 5px;
+}
+
+.account-photo {
+    margin: 10px;
+    border: 0px;
+    background-color: #ffffff;
+    margin-top: 32px;
+    margin-left: 50px;
+}
+
+.account-photo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-arrow {
+    border: solid firebrick;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    margin-top: 0;
+    padding: 4px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.account-photo img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown-options::after {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 130px; /* Ширина підкреслення */
+    height: 1px; /* Висота підкреслення */
+    background-color: darkgray;/* Колір підкреслення */
+    transform: translateX(-50%);
+}
+
+.dropdown-options-item {
+    font-size: 15px;
+    color: firebrick;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

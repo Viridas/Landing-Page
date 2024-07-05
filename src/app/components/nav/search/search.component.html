@@ -1,0 +1,23 @@
+<div class="input-container">
+  <div class="custom-border container">
+    <img src="assets/Photos/Lupa.png" alt="Search Icon" class="search-icon item">
+    <input 
+      type="text" 
+      class="form-control item" 
+      placeholder="Search..." 
+      aria-label="Search" 
+      aria-describedby="basic-addon1"
+      [(ngModel)]="searchText"
+      (input)="onInput()"
+    >
+    <button 
+      class="btn btn-clear item" 
+      (click)="clearSearch()"
+      aria-label="Clear Search"
+      style="max-width: 20px; border: 0;"
+    >
+      <span *ngIf="searchText">&times;</span> <!-- Показуємо знак &times; тільки якщо є текст -->
+      <span *ngIf="!searchText" style="margin-left: 6.56px;">&nbsp;</span> <!-- Пустий символ для збереження місця, якщо немає тексту -->
+    </button>
+  </div>
+</div>

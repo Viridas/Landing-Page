@@ -1,0 +1,15 @@
+<ng-template #content let-d="dismiss" let-c="close">
+        <div class="offcanvas-header header-class">
+            <button type="button" aria-label="Close" (click)="d('Cross click')" style="margin: 0px; padding: 0%; border: 0; height: 40px; background-color: black;">
+                <div style="background-color: black; margin: 0px; padding: 0%;">
+                    <span class="custom-arrow"></span>
+                </div>
+            </button>
+            <h4 class="offcanvas-title title-class">Shopping basket</h4>
+        </div>
+        <div class="offcanvas-body">
+            <p class="center-block">Shopping basket is empty</p>
+        </div>
+</ng-template>
+
+<button class="shoping-basket" (click)="openEnd(content)">Shoping basket(0)</button>

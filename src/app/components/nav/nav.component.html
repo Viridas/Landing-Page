@@ -1,38 +1,38 @@
-<ul ngbNav #nav="ngbNav" [(activeId)]="active">
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="navbar-container">
 	<li [ngbNavItem]="1" class="search-class">
 		<app-search></app-search>
 	</li>
 	<div class="collum-container">
-		<div class="item mt-3">
+		<div class="mt-3">
 			<li [ngbNavItem]="2">
-				<button ngbNavLink class="for-name">Clothing store</button>
+				<button ngbNavLink class="for-name thin-text">Clothing store</button>
 			</li>
 		</div>
 		<div style="margin-top: 40px;">
-			<div class="row-container">
+			<div class="row-container" style="max-width: 760px;">
 				<div class="item">
 					<li [ngbNavItem]="3">
-						<button ngbNavLink class="item-text">Shop All</button>
+						<button ngbNavLink class="item-text thin-text">Shop All</button>
 					</li>
 				</div>
 				<div class="item">
 					<li [ngbNavItem]="4">
-						<button ngbNavLink class="item-text">Our Story</button>
+						<button ngbNavLink class="item-text thin-text">Our Story</button>
 					</li>
 				</div>
 				<div class="item">
 					<li [ngbNavItem]="5">
-						<button ngbNavLink class="item-text">Our Craft</button>
+						<button ngbNavLink class="item-text thin-text">Our Craft</button>
 					</li>
 				</div>
 				<div class="item">
 					<li [ngbNavItem]="6">
-						<button ngbNavLink class="item-text">Gift Card</button>
+						<button ngbNavLink class="item-text thin-text">Gift Card</button>
 					</li>
 				</div>
-				<div class="item">
+				<div>
 					<li [ngbNavItem]="7">
-						<button ngbNavLink class="item-text">Contact</button>
+						<button ngbNavLink class="item-text thin-text">Contact</button>
 					</li>
 				</div>
 			</div>
@@ -59,13 +59,9 @@
 		</button>
 	</li>
 	<li [ngbNavItem]="12">
-		<button ngbNavLink>Account</button>
-		<ng-template ngbNavContent>
-		</ng-template>
+		<app-account></app-account>
 	</li>
 	<li [ngbNavItem]="13">
-		<button ngbNavLink>Shopping Basket</button>
-		<ng-template ngbNavContent>
-		</ng-template>
+		<app-shoping-basket></app-shoping-basket>
 	</li>
 </ul>
