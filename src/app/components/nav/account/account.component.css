@@ -22,7 +22,7 @@ button[ngbDropdownToggle]::after {
 }
 
 .custom-arrow {
-    border: solid firebrick;
+    border: solid #bc4c2a;
     border-width: 0 2px 2px 0;
     display: inline-block;
     margin-top: 0;
@@ -52,7 +52,7 @@ button[ngbDropdownToggle]::after {
 
 .dropdown-options-item {
     font-size: 15px;
-    color: firebrick;
+    color: #bc4c2a;
     margin-top: 10px;
     margin-bottom: 10px;
 }

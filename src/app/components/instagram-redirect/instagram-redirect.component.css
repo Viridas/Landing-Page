@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+.main-container {
+    margin-top: 50px;
+    background-color: #f6f3ef;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 7px;
+    font-size: 23px;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 320px;
+}
+
+.for-name {
+    font-family: 'Playwrite NZ', sans-serif;
+    color: #bc4c2a;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.for-name:hover {
+    font-family: 'Playwrite NZ', sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.carousel-items {
+    margin-left: 0%;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-items div {
+    flex: 0 0 20%;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 0px;
+    color: black !important;
+    filter: none !important;
+    /* Видалено будь-які фільтри */
+    opacity: 1 !important;
+    z-index: 5;
+}
+
+.controls {
+    width: 45px;
+    height: auto;
+    color: black !important;
+    filter: brightness(100%) !important;
+    /* Змінено на 100% */
+    opacity: 1 !important;
+}
+
+.item-photo-main-container {
+    width: 304px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.item-photo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.item-photo {
+    position: relative;
+    top: 30px;
+    width: 320px;
+    height: auto;
+    transition: filter 0.2s;
+    z-index: 1;
+}
+
+.item-photo-container:hover .item-photo{
+    filter: brightness(53%);
+}
+
+.overlay-text {
+    position: relative;
+    bottom: 170px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    text-align: center;
+    z-index: 2;
+    height: 5px;
+}
+
+.item-photo-container:hover .overlay-text {
+    opacity: 1;
+    /* Показ тексту при наведенні */
+}
+
+.price {
+    font-style: italic;
+    font-style: oblique;
+    color: #bc4c2a;
+    margin-top: 0%;
+}
+
+.product {
+    font-size: 19px;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.bottom-text-main-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    height: 170px;
+}
+
+.bottom-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.bottom-text {
+    font-family: 'Playwrite NZ', sans-serif;
+    color: #bc4c2a;
+    font-size: 21px;
+}
+
+.bottom-line {
+    width: 19px;
+    border-bottom: 3px solid #bc4c2a;
+    margin-bottom: 15px;
+}
+
+.link {
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: 250;
+    text-decoration: none;
+    color: white;
+}

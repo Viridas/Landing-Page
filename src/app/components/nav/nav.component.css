@@ -3,11 +3,12 @@
 .search-class {
     margin-top: 20px;
     margin-left: 50px;
+    min-width: 150px;
 }
 
 .for-name {
     font-family: 'Playwrite NZ', sans-serif;
-    color: firebrick;
+    color: #bc4c2a;
     font-size: 24px;
 }
 
@@ -40,12 +41,14 @@
 }
 
 .item {
+    min-width: 8vw;
     margin-right: 40px;
 }
 
 .item-text {
     color: black;
     font-size: 18px;
+    padding: 0%;
 }
 
 .last-item-text {
@@ -54,5 +57,25 @@
 }
 
 .item-text:hover {
-    color: firebrick;
+    color: #bc4c2a;
+}
+
+.shoping-basket-class {
+    position: relative;
+    min-width: 20vw;
+}
+
+.account-class {
+    position: relative;
+}
+
+@media (max-width: 1410px) {
+    .shoping-basket-class {
+        position: relative;
+        right: 15vh;
+    }
+    .account-class {
+        position: relative;
+        right: 15vh;
+    }
 }

@@ -1,1 +1,44 @@
-<p>footer works!</p>
+<div>
+    <div class="footer-container">
+        <div class="collum-container">
+            <p class="name">Clothing store</p>
+        </div>
+        <div class=collum-container>
+            <a class="text">Shop All</a>
+            <a class="text">Our Story</a>
+            <a class="text">Our Craft</a>
+            <a class="text">Gift Card</a>
+            <a class="text">Contact</a>
+        </div>
+        <div class="collum-container">
+            <a class="text">FAQ</a>
+            <a class="text">Shipping & Returns</a>
+            <a class="text">Store Policy</a>
+            <a class="text">Payment Methods</a>
+            <a class="text">Stockists</a>
+        </div>
+        <div class=collum-container>
+            <div class="collum-right-container">
+                <a class="text">Facebook</a>
+                <a class="text">Instagram</a>
+                <a class="text">Twitter</a>
+                <a class="text">Pinterest</a>
+            </div>
+        </div>
+        <div class="collum-container">
+            <div class="join-us-container">
+                <h2 class="join-us-text">JOIN US!</h2>
+                <form #joinUsForm="ngForm" (ngSubmit)="onSubmit(joinUsForm)">
+                  <div class="form-group">
+                    <label for="email" class="email">Email *</label>
+                    <input type="email" id="email" name="email" class="form-control" required [(ngModel)]="email" #emailModel="ngModel">
+                  </div>
+                  <button type="submit" class="btn btn-outline-danger" [disabled]="joinUsForm.invalid">Send</button>
+                </form>
+            </div>   
+        </div>
+    </div>
+    <div class="bottom-container">
+        <p class="bottom-text">©2035 by Clothing store</p>
+    </div>
+</div>

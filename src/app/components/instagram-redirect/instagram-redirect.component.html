@@ -1,1 +1,38 @@
-<p>instagram-redirect works!</p>
+<div class="main-container">
+    <div class="text-container">
+        <p class="text">FOLLOW<br>ADALENE ON INSTAGRAM</p>
+        <a class="for-name">&#64;clothing store</a>
+    </div>
+    <div class="carousel-container">
+        <button (click)="showPrevSlide()" class="carousel-control-prev" style="margin-left: 50px;">
+            <img src="assets/Photos/Arrow.png" class="controls">
+        </button>
+        <div class="carousel-items">
+            <div *ngFor="let item of items; let i = index; trackBy: trackByFn;" [@slideAnimation]="currentSlideIndex" (@slideAnimation.done)="onAnimationEnd($event)">
+                <div class="item-photo-main-container">
+                    <div class="item-photo-container">
+                        <img [src]="item.image" class="item-photo">
+                        <div class="overlay-text"><a class="link">&#64;clothing_store: #clothing_store, #clothing_store.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button (click)="showNextSlide()" class="carousel-control-next" style="margin-right: 50px;">
+            <img src="assets/Photos/Arrow_2.png" class="controls">
+        </button>
+    </div>
+    <div class="bottom-text-main-container">
+        <div class="bottom-text-container">
+            <div class="bottom-line"></div>
+            <p class="bottom-text">Worldwide shipping</p>
+        </div>
+        <div class="bottom-text-container">
+            <div class="bottom-line"></div>
+            <p class="bottom-text">Easy 30 day returns</p>
+        </div>
+        <div class="bottom-text-container">
+            <div class="bottom-line"></div>
+            <p class="bottom-text">12 month warranty</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+.main-container {
+  height: 750px;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-items {
+  position: relative;
+  margin-left: 8%;
+  display: flex;
+  overflow: hidden;
+  width: 85%;
+}
+
+.animation-class {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transform: translateX(-100%);
+}
+
+.carousel-items div {
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 190px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.controls {
+  width: 18px;
+  height: auto;
+}
+
+.item-photo-container {
+  display: flex;
+  width: 93%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 6%;
+  margin-left: 5px;
+}
+
+.item-photo {
+  width: 410px;
+  height: auto;
+}
+
+.main-text-class {
+  margin-top: 2%;
+  width: 20px;
+  border-bottom: 3px solid black;
+}
+
+.main-style {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.main-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  letter-spacing: 5px;
+  color: black;
+  text-align: center;
+  z-index: 4;
+}
+
+.button-class {
+  background: white;
+  color: #bc4c2a;
+  font-weight: 300;
+  width: 270px;
+  height: 60px;
+  border: 1px solid #bc4c2a; 
+  transition: background 0.4s ease, color 0.4s ease;
+  z-index: 4;
+}
+
+.button-class:hover {
+  background: #bc4c2a;
+  color: white; 
+}
+
+.main-button-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.price {
+  font-style: italic;  
+  font-style: oblique;
+  color: #bc4c2a;
+  margin-top: 0%;
+}
+
+.product {
+  font-size: 19px;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}

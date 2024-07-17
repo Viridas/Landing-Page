@@ -1,17 +1,22 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-main-photo',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './main-photo.component.html',
-  styleUrl: './main-photo.component.css'
+  styleUrls: ['./main-photo.component.css']
 })
 export class MainPhotoComponent {
   offsetY = 0;
 
-  onScroll(event: Event): void {
-    this.offsetY = window.scrollY * 0.9; // зміна швидкості тут
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event): void {
+    window.requestAnimationFrame(this.parallax.bind(this));
+  }
+
+  parallax(): void {
+    this.offsetY = window.scrollY * 0.7; // зміна швидкості тут
   }
 }

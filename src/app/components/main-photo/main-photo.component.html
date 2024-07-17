@@ -1,10 +1,10 @@
-<div (window:scroll)="onScroll($event)">
-    <!-- <div [style.transform]="'translateY(' + offsetY + 'px)'"> -->
-    <div>
-        <img src="assets\Photos\Main_Photo.png" alt="main Photo" class="background-image">
+<div class="parallax-container" (window:scroll)="onWindowScroll($event)">
+    <div class="photo-container" [style.transform]="'translateY(' + offsetY + 'px)'">
+      <img src="assets/Photos/Main_Photo.png" alt="main Photo" class="background-image">
     </div>
     <h1 class="main-text">CUE THE COLOR</h1>
     <button class="button-class">
-        Shop the collection
+      Shop the collection
     </button>
-</div>
+  </div>
+  
