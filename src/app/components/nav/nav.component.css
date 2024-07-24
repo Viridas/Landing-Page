@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
 
 .search-class {
-    margin-top: 20px;
-    margin-left: 50px;
-    min-width: 150px;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    min-width: 15vw;
+    max-width: 17vw;
 }
 
 .for-name {
     font-family: 'Playwrite NZ', sans-serif;
     color: #bc4c2a;
-    font-size: 24px;
+    font-size: 2vw;
+    padding: 0%;
 }
 
 .thin-text {
@@ -23,31 +25,36 @@
 
 
 .collum-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 9%;
+    max-width: 60vw;
+    left: 8vw;
 }
 
 .row-container {
     display: flex;
+    margin-top: 3vw;
 }
 
 .icons-grose {
-    width: 20px;
-    height: 20px;
-    margin-top: 15px;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-top: 2.6vw;
+    margin-left: 1vw;
+    padding: 0%;
 }
 
 .item {
     min-width: 8vw;
-    margin-right: 40px;
+    margin-right: 3vw;
 }
 
 .item-text {
     color: black;
-    font-size: 18px;
+    font-size: 1.5vw;
     padding: 0%;
 }
 
@@ -63,19 +70,101 @@
 .shoping-basket-class {
     position: relative;
     min-width: 20vw;
+    margin-left: 3vw;
+    top: 2.3vw
 }
 
 .account-class {
     position: relative;
+    margin-left: 2vw;
+    width: 3vw;
+    height: auto;
 }
 
-@media (max-width: 1410px) {
-    .shoping-basket-class {
-        position: relative;
-        right: 15vh;
+.media-button-class {
+ padding: 0%;
+}
+
+.media-class {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-height: 7vh;
+    margin-left: 2vw;
+}
+
+@media (max-width: 450px) {
+    .item-text {
+        opacity: 0;
     }
+    .search-class {
+        margin-top: 2.5vh;
+        margin-left: 4vw;
+        min-width: 20vw;
+    }
+
+    .for-name {
+        position: relative;
+        font-size: 5vw !important;
+    }
+
     .account-class {
         position: relative;
-        right: 15vh;
+        margin-left: 0vw;
+        right: 60%;
+        bottom: 10% !important;
     }
 }
+
+@media (max-width: 1400px) {
+    .media-clas {
+        opacity: 0 !important;
+    }
+
+    .shoping-basket-class {
+        position: relative;
+        min-width: 20vw;
+        margin-left: 2vw;
+    }
+    
+    .account-class {
+        position: relative;
+        top: 0.5vw;
+        right: 5vw;
+        margin-left: 0vw;
+    }
+}
+
+@media (max-width: 930px) {
+    .collum-container {
+        position: relative;
+        left: 0vw;
+    }
+
+    .item-text {
+        color: black;
+        font-size: 80%;
+        padding: 0%;
+    }
+
+    .for-name {
+        position: relative;
+        font-size: 90%;
+    }
+
+    .account-class {
+        position: relative;
+        margin-left: 0vw;
+        right: 60%;
+    }
+}
+
+@media (min-width: 1900px) {
+    .collum-container {
+        width: 70vw !important;
+    }
+    .shoping-basket-class {
+        position: relative;
+    }
+}
+

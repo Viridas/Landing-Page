@@ -3,10 +3,10 @@
     <div class="photos-row">
         <div class="photos-container" style="background-color: #f6f3ef;">
             <img src="assets/Photos/Catalog/Product_is_lost.png" class="lost-photo">
-            <p class="lost-text">Товар відсутній</p>
+            <p class="lost-text">The product is not available</p>
         </div>
         <div (window:scroll)="onWindowScroll($event)" class="photos-container">
-            <div [style.transform]="'translateY(' + offsetY + 'px)'" style="position: relative; bottom: 1000px;">
+            <div [style.transform]="'translateY(' + offsetY + 'px)'" class="main-hand-photo">
                 <img src="assets/Photos/Catalog/Hand.png" class="hand-photo">
             </div>
         </div>
@@ -17,7 +17,7 @@
         </div>
         <div class="photos-container" style="background-color: #f6f3ef;">
             <img src="assets/Photos/Catalog/Product_is_lost.png" class="lost-photo">
-            <p class="lost-text">Товар відсутній</p>
+            <p class="lost-text">The product is not available</p>
         </div>
     </div>
     <p class="photo-text-left">LEATHER BELTS</p>
@@ -43,7 +43,7 @@
             <p class="main-text-class">PRODUCTS</p>
         </div>
         <div class="description-container">
-            <p class="main-text-header" style="position: relative; top: 160px; right: 9px;">Created in the</p>
+            <p class="main-text-header">Created in the</p>
             <a class="link">Learn our process</a>
             <div class="description-photo-container">
                 <img src="assets/Photos/Catalog/Wallet.png" style="width: 140%; height: auto; object-fit: cover;">

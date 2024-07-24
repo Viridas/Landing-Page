@@ -28,7 +28,7 @@
 .name {
     font-family: 'Playwrite NZ', sans-serif;
     color: #bc4c2a;
-    font-size: 24px;
+    font-size: 1.5vw;
     margin-bottom: 250px;
 }
 
@@ -48,7 +48,7 @@
 
 .text {
     margin-bottom: 23px;
-    font-size: 16px;
+    font-size: 1.3vw;
     letter-spacing: 0.6px;
     font-weight: 350;
     text-decoration: none;
@@ -57,7 +57,7 @@
 
 .join-us-text {
     font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: 600;
     letter-spacing: 5px;
     margin-bottom: 25px;
@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 180px;
+    max-width: 25vw;
     margin-bottom: 60px;
 }
 
@@ -77,6 +77,9 @@
 }
 
 .form-control {
+    width: 8vw;
+    height: 1.5vw;
+    font-size: 1.1vw;
     border: none;
     border-bottom: 1px solid #bc4c2a;
     border-radius: 0;
@@ -97,7 +100,7 @@
     border: 1px solid #bc4c2a;
     width: 100%;
     border-radius: 0%;
-    height: 50px;
+    height: 40px;
     margin-top: 10px;
 }
 
@@ -107,7 +110,7 @@
 }
 
 .email {
-    font-size: 15px;
+    font-size: 1.1vw;
     font-weight: 400;
     letter-spacing: 1px;
 }

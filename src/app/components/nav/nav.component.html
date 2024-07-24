@@ -8,62 +8,62 @@
 				<button ngbNavLink class="for-name thin-text">Clothing store</button>
 			</li>
 		</div>
-		<div style="margin-top: 40px;">
-			<div class="row-container" style="max-width: 760px;">
-				<div class="item">
-					<li [ngbNavItem]="3">
-						<button ngbNavLink class="item-text thin-text">Shop All</button>
-					</li>
-				</div>
-				<div class="item">
-					<li [ngbNavItem]="4">
-						<button ngbNavLink class="item-text thin-text">Our Story</button>
-					</li>
-				</div>
-				<div class="item">
-					<li [ngbNavItem]="5">
-						<button ngbNavLink class="item-text thin-text">Our Craft</button>
-					</li>
-				</div>
-				<div class="item">
-					<li [ngbNavItem]="6">
-						<button ngbNavLink class="item-text thin-text">Gift Card</button>
-					</li>
-				</div>
-				<div>
-					<li [ngbNavItem]="7">
-						<button ngbNavLink class="item-text thin-text">Contact</button>
-					</li>
-				</div>
+		<div class="row-container">
+			<div class="item">
+				<li [ngbNavItem]="3">
+					<button ngbNavLink class="item-text thin-text">Shop All</button>
+				</li>
+			</div>
+			<div class="item">
+				<li [ngbNavItem]="4">
+					<button ngbNavLink class="item-text thin-text">Our Story</button>
+				</li>
+			</div>
+			<div class="item">
+				<li [ngbNavItem]="5">
+					<button ngbNavLink class="item-text thin-text">Our Craft</button>
+				</li>
+			</div>
+			<div class="item">
+				<li [ngbNavItem]="6">
+					<button ngbNavLink class="item-text thin-text">Gift Card</button>
+				</li>
+			</div>
+			<div>
+				<li [ngbNavItem]="7">
+					<button ngbNavLink class="item-text thin-text">Contact</button>
+				</li>
 			</div>
 		</div>
 	</div>
-	<li [ngbNavItem]="8">
-		<button ngbNavLink class="icons-grose">
-			<img src="assets/Photos/Facebook-icon.png" alt="Facebook" class="icons-grose">
-		</button>
-	</li>
-	<li [ngbNavItem]="9">
-		<button ngbNavLink class="icons-grose">
-			<img src="assets/Photos/Instagram-icon.png" alt="Instagram" class="icons-grose">
-		</button>
-	</li>
-	<li [ngbNavItem]="10">
-		<button ngbNavLink class="icons-grose">
-			<img src="assets/Photos/Twitter-icon.png" alt="Twitter" class="icons-grose">
-		</button>
-	</li>
-	<li [ngbNavItem]="11">
-		<button ngbNavLink class="icons-grose">
-			<img src="assets/Photos/Pinteresyt-icon.png" alt="Pinterest" class="icons-grose">
-		</button>
-	</li>
+	<div *ngIf="windowWidth > 1400" class="media-class">
+		<li [ngbNavItem]="8">
+			<button ngbNavLink class="media-button-class">
+				<img src="assets/Photos/Facebook.png" alt="Facebook" class="icons-grose" style="width: 1vw; height: auto;">
+			</button>
+		</li>
+		<li [ngbNavItem]="9">
+			<button ngbNavLink class="media-button-class">
+				<img src="assets/Photos/Instagram.jpg" alt="Instagram" class="icons-grose" style="margin-top: 2.4vw;">
+			</button>
+		</li>
+		<li [ngbNavItem]="10">
+			<button ngbNavLink class="media-button-class">
+				<img src="assets/Photos/X.png" alt="Twitter" class="icons-grose" style="width: 1.4vw; height: auto;"> 
+			</button>
+		</li>
+		<li [ngbNavItem]="11">
+			<button ngbNavLink class="media-button-class">
+				<img src="assets/Photos/pinterest.png" alt="Pinterest" class="icons-grose" style="width: 0.8vw; height: auto;">
+			</button>
+		</li>
+	</div>
 	<li [ngbNavItem]="12">
 		<div class="account-class">
 			<app-account></app-account>
 		</div>
 	</li>
-	<li [ngbNavItem]="13">
+	<li *ngIf="windowWidth > 930" [ngbNavItem]="13">
 		<div class="shoping-basket-class">
 			<app-shoping-basket></app-shoping-basket>
 		</div>

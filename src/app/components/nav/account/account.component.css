@@ -2,17 +2,21 @@ button[ngbDropdownToggle]::after {
     display: none;
   }
 
+.img-class {
+    width: 2vw !important;
+    height: 2vw !important;
+}
+
 .icons-grose {
     width: 5px;
     height: 5px;
 }
 
 .account-photo {
-    margin: 10px;
     border: 0px;
     background-color: #ffffff;
-    margin-top: 32px;
-    margin-left: 50px;
+    margin-top: 2.1vw;
+    margin-left: 1vw;
 }
 
 .account-photo {
@@ -26,7 +30,7 @@ button[ngbDropdownToggle]::after {
     border-width: 0 2px 2px 0;
     display: inline-block;
     margin-top: 0;
-    padding: 4px;
+    padding: 0.2vw;
     margin-left: 15px;
     margin-bottom: 5px;
     transform: rotate(45deg);

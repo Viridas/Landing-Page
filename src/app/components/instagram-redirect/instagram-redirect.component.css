@@ -10,8 +10,8 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-weight: 600;
-    letter-spacing: 7px;
-    font-size: 23px;
+    letter-spacing: 0.3vw;
+    font-size: 1.7vw;
 }
 
 .text-container {
@@ -19,13 +19,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 320px;
+    height: 20vw;
 }
 
 .for-name {
     font-family: 'Playwrite NZ', sans-serif;
     color: #bc4c2a;
-    font-size: 24px;
+    font-size: 1.7vw;
     font-weight: 200;
     text-decoration: none;
     transition: color 0.4s ease;
@@ -34,7 +34,7 @@
 .for-name:hover {
     font-family: 'Playwrite NZ', sans-serif;
     color: black;
-    font-size: 24px;
+    font-size: 1.7vw;
     font-weight: 200;
     text-decoration: none;
 }
@@ -64,6 +64,7 @@
     background: none;
     border: none;
     font-size: 2rem;
+    margin-top: 3vw;
     cursor: pointer;
     width: 0px;
     color: black !important;
@@ -74,7 +75,7 @@
 }
 
 .controls {
-    width: 45px;
+    width: 2vw;
     height: auto;
     color: black !important;
     filter: brightness(100%) !important;
@@ -83,8 +84,8 @@
 }
 
 .item-photo-main-container {
-    width: 304px;
-    height: 350px;
+    width: 20vw;
+    height: 23vw;
     overflow: hidden;
 }
 
@@ -99,7 +100,7 @@
 .item-photo {
     position: relative;
     top: 30px;
-    width: 320px;
+    width: 22vw;
     height: auto;
     transition: filter 0.2s;
     z-index: 1;
@@ -111,7 +112,7 @@
 
 .overlay-text {
     position: relative;
-    bottom: 170px;
+    bottom: 13vw;
     opacity: 0;
     transition: opacity 0.2s ease;
     text-align: center;
@@ -156,18 +157,18 @@
 .bottom-text {
     font-family: 'Playwrite NZ', sans-serif;
     color: #bc4c2a;
-    font-size: 21px;
+    font-size: 1.6vw;
 }
 
 .bottom-line {
-    width: 19px;
+    width: 2vw;
     border-bottom: 3px solid #bc4c2a;
     margin-bottom: 15px;
 }
 
 .link {
     font-family: "Poppins", sans-serif;
-    font-size: 23px;
+    font-size: 1.5vw;
     font-weight: 250;
     text-decoration: none;
     color: white;

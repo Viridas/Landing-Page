@@ -1,5 +1,11 @@
 @import '../node_modules/animate.css/animate.min.css';
 
 .custom-bc {
-    max-width: 350px;
+    max-width: 25vw;
+}
+
+@media (min-width: 1900px) {
+    .custom-bc {
+        max-width: 500vw;
+    }
 }

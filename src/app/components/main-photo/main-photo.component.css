@@ -8,32 +8,32 @@
 .background-image {
     position: relative;
     filter: brightness(71%);
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
 .main-text {
     position: absolute;
-    top: 54%;
-    left: 36%;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: normal;
-    letter-spacing: 9px;
+    font-size: 2.5vw;
+    letter-spacing: 0.7vw;
     color: white;
-    text-align: center;
-    z-index: 2;
+    top: 36%;
+    left: 35%;
+    z-index: 3;
 }
 
 .button-class {
     position: absolute;
-    top: 66%;
+    top: 55%;
     left: 41%;
     background: none;
     color: white;
     font-weight: 300;
-    width: 270px;
-    height: 60px;
+    font-size: 1.1vw;
+    width: 17vw;
+    height: 4vw;
     border: 1px solid white;
     transition: background 0.4s ease, color 0.4s ease;
     z-index: 2;
@@ -47,4 +47,34 @@
 
 .photo-container {
     overflow: hidden;
+    height: 100% !important;
+}
+
+@media (max-width: 500px) { 
+    .background-image {
+        position: relative;
+        filter: brightness(71%);
+        width: 250vw;
+        left: -75vw;
+        z-index: 1;
+    }
+
+    .button-class {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        font-weight: 300;
+        font-size: 3vw;
+        width: 40vw;
+        height: 10vw;
+        border: 1px solid white;
+        transition: background 0.4s ease, color 0.4s ease;
+        z-index: 2;
+    }
+
+    .main-text {
+        top: 30%;
+        left: 22%;
+        font-size: 6vw;
+    }
 }
