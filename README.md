@@ -1,6 +1,3 @@
-### README.md
-
-```markdown
 # Landing Page
 
 This is a landing page project created using Angular, Bootstrap, and Animate.css.
