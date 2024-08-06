@@ -97,4 +97,4 @@ For any inquiries, please contact:
 
 ## Preview
 
-![Landing Page Preview](./images/preview.png)
+![Landing Page Preview](Landing-Page/src/assets/Photos/Previev.png)
