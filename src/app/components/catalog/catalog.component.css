@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+.photos-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.photos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%;
+    height: 40vw;
+}  
+
+.photos-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-hand-photo {
+    position: relative;
+    bottom: 182%;
+}
+
+.hand-photo {
+    position: relative;
+    width: 130%;
+    height: auto;
+    filter: brightness(84%);
+    object-fit: cover;
+    right: 6vw;
+    z-index: 1;
+}
+
+.hand-photo-container {
+    overflow: hidden;
+}
+
+.lost-photo {
+    width: 60%;
+    height: auto;
+}
+
+.lost-text {
+    position: relative;
+    font-size: 1.7vw;
+    font-weight: 470;
+    color: #234460;
+    bottom: 16%;
+}
+
+.photo-text-right {
+    position: relative;
+    top: 21vw;
+    left: 63%;
+    width: 22.5vw;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6vw;
+    letter-spacing: 0.3vw;
+    font-weight: 600;
+    color: white;
+    border-bottom: 0.2vw solid white;
+    z-index: 2;
+    height: 2vw;
+}
+
+.photo-text-left {
+    position: relative;
+    bottom: 21vw;
+    width: 15.5vw;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.6vw;
+    letter-spacing: 0.3vw;
+    border-bottom: 0.2vw solid white;
+    left: 17%;
+    height: 2vw;
+    z-index: 2;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-top: 1vw;
+}
+
+.description-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 27vw;
+    height: 27vw;
+    filter: brightness(75%);
+    z-index: 1;
+}
+
+.text-class {
+    padding: 0%;
+    margin: 0%;
+    height: 10px;
+    color: white;
+    z-index: 2;
+}
+
+.main-text-class {
+    position: relative;
+    bottom: 17vw;
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    height: 10px;
+    z-index: 2;
+}
+
+.main-text-header {
+    position: relative;
+    top: 10vw;
+    font-family: 'Playwrite NZ', sans-serif;
+    font-style: italic;  /* Курсив */
+    font-weight: 300;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    height: 10px;
+    z-index: 2;
+}
+
+.link {
+    position: relative;
+    top: 20vw;
+    font-size: 1vw;
+    color: white;
+    z-index: 2;
+}
+
+.bottom-stick {
+    position: relative;
+    bottom: 190px;
+    width: 17px;
+    height: 3px;
+    border-bottom: 3px solid white;
+    z-index: 2;
+}
+
+@media (max-width: 1400px) {
+    .hand-photo {
+        width: 160%;
+    }
+
+    .main-hand-photo {
+        bottom: 160%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-hand-photo {
+        bottom: 172%;
+    }
+
+    .hand-photo {
+        position: relative;
+        right: 10vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .hand-photo {
+        position: relative;
+        width: 200%;
+        right: 15vw;
+    }
+
+    .main-hand-photo {
+        bottom: 190%;
+    }
+}

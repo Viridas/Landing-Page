@@ -3,45 +3,104 @@
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  min-width: 10vw;
   max-width: 230px;
 }
 
 .container {
   display: flex;
-  /* Задаємо контейнеру flex-контейнер */
-}
-
-.item {
-  flex: 1;
-  /* Розтягуємо елементи, щоб вони займали однакову ширину */
-  /* або встановлюємо конкретну ширину або інші властивості flexbox */
+  padding: 0%;
+  max-height: 2.5vw;
+  min-height: 2.5vw;
+  min-width: 15vw;
 }
 
 .search-icon {
-  position: absolute;
-  height: 30px;
-  width: 35px;
+  min-height: 10%;
+  max-height: 10%;
+  min-width: 20%;
+  max-width: 20%;
 }
 
 .form-control {
-  padding-left: 40px;
+  padding: 0%;
   border: none;
+  border-radius: 0%;
   box-shadow: none;
-  border-radius: 0;
-  color: firebrick;
+  color: #bc4c2a;
+  min-width: 60%;
+  font-size: 70%;
+}
+
+.item {
+  min-width: 15%;
+  max-height: 100%;
+  padding: 0%;
+  border: none;
+  text-align: center;
+  font-size: 90%;
 }
 
 .custom-border {
-  border-bottom: 1px solid #A0522D;
+  border-bottom: 1px solid #bc4c2a;
 }
 
 .custom-border:focus {
-  border-color: #A0522D;
+  border-color: #bc4c2a;
   box-shadow: none;
   border-radius: 0;
 }
 
 .custom-border:hover {
-  border-bottom: 2px solid #A0522D;
-  /* Зміна товщини підкреслення на hover */
+  border-bottom: 2px solid #bc4c2a;
+}
+
+@media (max-width: 450px) {
+  .container {
+    min-height: 5vw;
+    max-height: 5vw;
+    min-width: 25vw;
+  }
+
+  .item {
+    font-size: 70%;
+  }
+
+  .custom-border:hover {
+    border-bottom: 0.1vw solid #bc4c2a;
+  }
+}
+
+  @media (min-width: 1300px) {
+    .form-control {
+      padding: 0%;
+      border: none;
+      border-radius: 0%;
+      box-shadow: none;
+      color: #bc4c2a;
+      min-width: 60%;
+      font-size: 100%;
+    }
+    
+    .item {
+      min-width: 15%;
+      max-height: 100%;
+      padding: 0%;
+      border: none;
+      text-align: center;
+      font-size: 100%;
+    }
+  
+    .custom-border:hover {
+      border-bottom: 0.1vw solid #bc4c2a;
+    }
+}
+
+@media (min-width: 2000px) {
+  .form-control {
+    font-size: 200%;
+  }
+  .item {
+    font-size: 200%;
+  }
 }

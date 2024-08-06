@@ -1,13 +1,40 @@
 .nav-class{
-    height: 150px;
+    min-height: 11vw;
     position: fixed;
     background-color: #ffffff;
     width: 100%;
-    height: 23%;
-    z-index: 2;
+    z-index: 5;
+    opacity: 1;
 }
 
 .main-photo-class {
     z-index: 1;
     width: 100%;
+} 
+
+.best-sellers {
+    margin-top: 8vw;
+    z-index: 4;
+}
+
+.catalog {
+    z-index: 4;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@media (max-width: 450px) {
+    .nav-class{
+        min-height: 1vh;
+        max-height: 10vh !important;
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-class{
+        min-height: 13vw;
+    }
 }

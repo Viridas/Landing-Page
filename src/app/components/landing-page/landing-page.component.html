@@ -1,14 +1,17 @@
-<div class="nav-class">
+<div (window:scroll)="onScroll($event)" [@slideAnimation]="currentSlideIndex" [ngClass]="{'hidden': isNavbarHidden}" class="nav-class">
     <app-nav></app-nav>
 </div>
 
-<div style="height: 150px"></div>
+<div style="height: 10vw;"></div>
 
 <div class="main-photo-class">
     <app-main-photo></app-main-photo>
 </div>
-
-<app-best-sellers></app-best-sellers>
-<app-catalog></app-catalog>
+<div class="best-sellers">
+    <app-best-sellers></app-best-sellers>
+</div>
+<div class="catalog">
+    <app-catalog></app-catalog>
+</div>
 <app-instagram-redirect></app-instagram-redirect>
 <app-footer></app-footer>
