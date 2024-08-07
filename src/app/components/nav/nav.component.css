@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+@font-face {
+    font-family: 'Playwrite NZ'; /* Назва вашого шрифту */
+    src: url('/src/fonts/Playwrite_NZ/PlaywriteNZ-VariableFont_wght.ttf') format('ttf'),
+}
 
 .search-class {
     margin-top: 4vh;
