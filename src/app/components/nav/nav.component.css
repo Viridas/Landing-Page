@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Playwrite NZ'; /* Назва вашого шрифту */
-    src: url('/src/fonts/Playwrite_NZ/PlaywriteNZ-VariableFont_wght.ttf') format('ttf'),
-}
-
 .search-class {
     margin-top: 4vh;
     margin-left: 4vw;
