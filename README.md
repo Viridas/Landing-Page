@@ -1,8 +1,3 @@
-Щоб написати документацію до вашого проекту на основі вашого GitHub репозиторію, спочатку я надам приклад базової структури README.md. Пізніше ви зможете додати чи змінити будь-які деталі відповідно до ваших потреб.
-
-### README.md
-
-```markdown
 # Landing Page
 
 This is a landing page project created using Angular, Bootstrap, and Animate.css.
@@ -83,9 +78,6 @@ ng generate component component-name
 
 Contributions are welcome! Please fork the repository and create a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
@@ -97,4 +89,4 @@ For any inquiries, please contact:
 
 ## Preview
 
-![Landing Page Preview](./images/preview.png)
+![Landing Page Preview](./src/assets/Photos/Previev.png)
