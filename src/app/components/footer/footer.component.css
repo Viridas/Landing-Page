@@ -192,3 +192,9 @@
         font-size: 1.6vw;
     }
 }
+
+@media (max-width: 200px) {
+    .text {
+        font-size: 1vw;
+    }
+}
