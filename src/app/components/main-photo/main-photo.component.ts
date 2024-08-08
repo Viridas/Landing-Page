@@ -13,10 +13,15 @@ export class MainPhotoComponent {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event): void {
-    window.requestAnimationFrame(this.parallax.bind(this));
+    if (window.innerWidth >= 1000) {
+      window.requestAnimationFrame(this.parallax.bind(this));
+    } else {
+      this.offsetY = 0; // Скидаємо offset до 0 при маленькому екрані
+    }
   }
 
   parallax(): void {
     this.offsetY = window.scrollY * 0.7; // зміна швидкості тут
   }
 }
+

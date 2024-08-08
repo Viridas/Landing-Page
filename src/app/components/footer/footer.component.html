@@ -30,7 +30,7 @@
                 <h2 class="join-us-text">JOIN US!</h2>
                 <form #joinUsForm="ngForm" (ngSubmit)="onSubmit(joinUsForm)">
                   <div class="form-group">
-                    <label for="email" class="email">Email *</label>
+                    <label *ngIf="showElement" for="email" class="email">Email *</label>
                     <input type="email" id="email" name="email" class="form-control" required [(ngModel)]="email" #emailModel="ngModel">
                   </div>
                   <button type="submit" class="btn btn-outline-danger" [disabled]="joinUsForm.invalid">Send</button>

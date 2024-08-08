@@ -11,6 +11,19 @@ import { FormsModule } from '@angular/forms';
 })
 export class FooterComponent {
   email: string = "";
+  showElement: boolean = true;
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.checkScreenWidth();
+
+    window.addEventListener('resize', this.checkScreenWidth.bind(this));
+  }
+
+  checkScreenWidth() {
+    this.showElement = window.innerWidth >= 450;
+  }
 
   onSubmit(form: any) {
     if (form.valid) {

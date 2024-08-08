@@ -47,28 +47,73 @@ export class LandingPageComponent {
   }
 
   onScroll(event: Event): void {
-    const lastScrollTop = window.scrollY - this.lastScrollOperation;
+    if (window.innerWidth < 1440) {
+      const lastScrollTop = window.scrollY - this.lastScrollOperation;
 
-    if (this.isNavbarHidden == false && lastScrollTop > 200) {
-      this.showPrevSlide();
-      setTimeout(() => {
-        this.isNavbarHidden = true;
-        this.previousSlideIndex = this.previousSlideIndex - 1;
-      }, 500);
-      this.lastScrollOperation = window.scrollY;
-    } else if (this.isNavbarHidden == true && lastScrollTop < -200) {
-      this.isNavbarHidden = false;
-      this.showNextSlide();
-      this.previousSlideIndex = this.previousSlideIndex + 1;
-      this.lastScrollOperation = window.scrollY;
-    }else if (window.scrollY < 300) {
-    this.isNavbarHidden = false;
-  }
-    else if (lastScrollTop > 200) {
-      this.lastScrollOperation = window.scrollY;
-    }
-    else if (lastScrollTop < -200) {
-      this.lastScrollOperation = window.scrollY;
+      if (this.isNavbarHidden == false && lastScrollTop > 200) {
+        this.showPrevSlide();
+        setTimeout(() => {
+          this.isNavbarHidden = true;
+          this.previousSlideIndex = this.previousSlideIndex - 1;
+        }, 500);
+        this.lastScrollOperation = window.scrollY;
+      } else if (this.isNavbarHidden == true && lastScrollTop < -200) {
+        this.isNavbarHidden = false;
+        this.showNextSlide();
+        this.previousSlideIndex = this.previousSlideIndex + 1;
+        this.lastScrollOperation = window.scrollY;
+      } else if (window.scrollY < 300) {
+        this.isNavbarHidden = false;
+      } else if (lastScrollTop > 200) {
+        this.lastScrollOperation = window.scrollY;
+      } else if (lastScrollTop < -200) {
+        this.lastScrollOperation = window.scrollY;
+      }
+    } else if (window.innerWidth < 800) {
+      const lastScrollTop = window.scrollY - this.lastScrollOperation;
+
+      if (this.isNavbarHidden == false && lastScrollTop > 100) {
+        this.showPrevSlide();
+        setTimeout(() => {
+          this.isNavbarHidden = true;
+          this.previousSlideIndex = this.previousSlideIndex - 1;
+        }, 500);
+        this.lastScrollOperation = window.scrollY;
+      } else if (this.isNavbarHidden == true && lastScrollTop < -100) {
+        this.isNavbarHidden = false;
+        this.showNextSlide();
+        this.previousSlideIndex = this.previousSlideIndex + 1;
+        this.lastScrollOperation = window.scrollY;
+      } else if (window.scrollY < 200) {
+        this.isNavbarHidden = false;
+      } else if (lastScrollTop > 100) {
+        this.lastScrollOperation = window.scrollY;
+      } else if (lastScrollTop < -100) {
+        this.lastScrollOperation = window.scrollY;
+      }
+    } else {
+      const lastScrollTop = window.scrollY - this.lastScrollOperation;
+
+      if (this.isNavbarHidden == false && lastScrollTop > 600) {
+        this.showPrevSlide();
+        setTimeout(() => {
+          this.isNavbarHidden = true;
+          this.previousSlideIndex = this.previousSlideIndex - 1;
+        }, 500);
+        this.lastScrollOperation = window.scrollY;
+      } else if (this.isNavbarHidden == true && lastScrollTop < -400) {
+        this.isNavbarHidden = false;
+        this.showNextSlide();
+        this.previousSlideIndex = this.previousSlideIndex + 1;
+        this.lastScrollOperation = window.scrollY;
+      } else if (window.scrollY < 500) {
+        this.isNavbarHidden = false;
+      }
+      else if (lastScrollTop > 600) {
+        this.lastScrollOperation = window.scrollY;
+      } else if (lastScrollTop < -600) {
+        this.lastScrollOperation = window.scrollY;
+      }
     }
   }
 }

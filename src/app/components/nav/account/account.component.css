@@ -60,3 +60,29 @@ button[ngbDropdownToggle]::after {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 930px) {
+    .img-class {
+        width: 4vw !important;
+        height: 4vw !important;
+    }
+
+    .custom-arrow {
+        border: solid #bc4c2a;
+        border-width: 0 2px 2px 0;
+        padding: 0.5vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .img-class {
+        width: 6vw !important;
+        height: 6vw !important;
+    }
+
+    .custom-arrow {
+        border: solid #bc4c2a;
+        border-width: 0 2px 2px 0;
+        padding: 0.7vw;
+    }
+}

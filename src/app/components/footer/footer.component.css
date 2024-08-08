@@ -1,7 +1,7 @@
 .footer-container {
     display: flex;
     flex-direction: row;
-    height: 480px;
+    height: 30vw;
     justify-content: center;
     align-items: center;
 }
@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     width: 20%;
+    max-height: 50vw;
     flex-direction: column;
 }
 
@@ -19,14 +20,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 3.5vw;
 }
 
 .name {
     font-family: 'Playwrite NZ', sans-serif;
     color: #bc4c2a;
     font-size: 1.5vw;
-    margin-bottom: 250px;
+    margin-bottom: 20vw;
 }
 
 .bottom-container {
@@ -34,18 +35,22 @@
     justify-content: center;
     align-items: center;
     background-color: #f6f3ef;
-    height: 52.5px;
+    height: 3vw;
 }
 
 .bottom-text {
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    margin: 0%;
     letter-spacing: 0.6px;
     font-weight: 350;
 }
 
 .text {
-    margin-bottom: 23px;
-    font-size: 1.3vw;
+    margin-bottom: 2vw;
+    font-size: 1vw;
     letter-spacing: 0.6px;
     font-weight: 350;
     text-decoration: none;
@@ -53,11 +58,12 @@
 }
 
 .join-us-text {
+    position: relative;
     font-family: "Poppins", sans-serif;
     font-size: 1.5vw;
     font-weight: 600;
-    letter-spacing: 5px;
-    margin-bottom: 25px;
+    letter-spacing: 0.2vw;
+    margin-bottom: 1.5vw;
 }
 
 .join-us-container {
@@ -66,14 +72,15 @@
     align-items: center;
     flex-direction: column;
     max-width: 25vw;
-    margin-bottom: 60px;
+    margin-bottom: 4vw;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
 }
 
 .form-control {
+    position: relative;
     width: 8vw;
     height: 1.5vw;
     font-size: 1.1vw;
@@ -93,12 +100,17 @@
 }
 
 .btn-outline-danger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #bc4c2a;
     border: 1px solid #bc4c2a;
     width: 100%;
     border-radius: 0%;
-    height: 40px;
-    margin-top: 10px;
+    height: 2.5vw;
+    margin-top: 1vw;
+    font-size: 1.3vw;
 }
 
 .btn-outline-danger:hover {
@@ -110,4 +122,67 @@
     font-size: 1.1vw;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+@media (max-width: 1000px) {
+    .name {
+        font-size: 2vw;
+    }
+
+    .text {
+        font-size: 1.9vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .name {
+        font-size: 2.5vw;
+    }
+
+    .bottom-container {
+        height: 5vw;
+    }
+
+    .bottom-text {
+        font-size: 2vw;
+    }
+
+    .text {
+        font-size: 1.9vw;
+    }
+
+    .btn-outline-danger {
+        position: relative;
+        right: 2.5vw;
+        width: 17vw;
+        height: 3vw;
+        font-size: 1.6vw;
+    }
+    
+    .form-control {
+        position: relative;
+        right: 2.5vw;
+        width: 17vw;
+        height: 5vw;
+        font-size: 2.5vw;
+        padding: 0%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 4px;
+    }
+
+    .form-control:hover {
+        border-bottom: 1px solid #bc4c2a;
+    }
+
+    .email {
+        font-size: 2vw;
+    }
+
+    .join-us-text {
+        position: relative;
+        right: 2.5vw;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
 }

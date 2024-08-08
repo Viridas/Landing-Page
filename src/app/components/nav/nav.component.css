@@ -104,13 +104,12 @@
     .for-name {
         position: relative;
         font-size: 5vw !important;
+        bottom: 1.5vw;
     }
 
     .account-class {
-        position: relative;
-        margin-left: 0vw;
-        right: 60%;
-        bottom: 10% !important;
+        bottom: 2vw !important;
+        right: 10vw !important;
     }
 }
 
@@ -152,8 +151,7 @@
 
     .account-class {
         position: relative;
-        margin-left: 0vw;
-        right: 60%;
+        margin-left: 10vw;
     }
 }
 

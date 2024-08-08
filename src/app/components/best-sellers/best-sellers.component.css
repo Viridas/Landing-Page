@@ -76,8 +76,8 @@
 
 .main-text-class {
   margin-top: 2%;
-  width: 20px;
-  border-bottom: 3px solid black;
+  width: 1.5vw;
+  border-bottom: 0.2vw solid black;
 }
 
 .main-style {
@@ -90,7 +90,7 @@
 .main-text {
   font-family: "Poppins", sans-serif;
   font-weight: 550;
-  font-size: 2vw;
+  font-size: 1.5vw;
   letter-spacing: 5px;
   color: black;
   text-align: center;
@@ -141,6 +141,12 @@
     height: 60vw;
   }
 
+  .main-text-class {
+    margin-top: 1%;
+    width: 3vw;
+    border-bottom: 0.2vw solid black;
+  }
+
   .main-text {
     font-family: "Poppins", sans-serif;
     font-weight: 550;
@@ -149,6 +155,20 @@
     color: black;
     text-align: center;
     z-index: 4;
+  }
+
+  .price {
+    font-style: italic;  
+    font-style: oblique;
+    font-size: 3vw;
+    color: #bc4c2a;
+    margin-top: 0%;
+  }
+  
+  .product {
+    font-size: 4vw;
+    margin-top: 5%;
+    margin-bottom: 0%;
   }
 
   .item-photo {
@@ -164,21 +184,58 @@
   .main-container {
     height: 90vw;
   }
+
+  .button-class {
+    font-size: 2.3vw;
+    width: 48vw;
+    height: 8vw;
+  }
 }
 
 @media (max-width: 450px) {
+  .carousel-control-prev {
+    margin-right: 0vw;
+    max-width: 9vw;
+  }
+  
+  .carousel-control-next {
+    margin-left: 0vw;
+    max-width: 9vw;
+  }
+
   .main-text {
     font-size: 5vw;
   }
 
   .carousel-items div {
-    flex: 0 0 100%;
-    height: 120vw;
+    flex: 0 0 50%;
+    height: 60vw;
+    margin-left: 0.35%;
+  }
+
+  .price {
+    font-style: italic;  
+    font-style: oblique;
+    font-size: 3vw;
+    color: #bc4c2a;
+    margin-top: 0%;
+  }
+  
+  .product {
+    font-size: 4vw;
+    margin-top: 5%;
+    margin-bottom: 0%;
   }
 
   .item-photo {
-    width: 100vw;
+    width: 50vw;
     height: auto;
+  }
+
+  .main-text-class {
+    margin-top: 0%;
+    width: 5vw;
+    border-bottom: 0.2vw solid black;
   }
 
   .item-photo-container {
@@ -188,7 +245,7 @@
 
   .carousel-control-prev,
   .carousel-control-next {
-    height: 90vw !important;
+    height: 45vw !important;
   }
 
   .main-container {
@@ -197,5 +254,11 @@
 
   .main-button-class {
     margin-top: 0%;
+  }
+
+  .button-class {
+    font-size: 3vw;
+    width: 48vw;
+    height: 9vw;
   }
 }
