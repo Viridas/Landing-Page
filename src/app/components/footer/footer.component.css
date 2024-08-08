@@ -186,3 +186,9 @@
         margin-bottom: 1vw;
     }
 }
+
+@media (max-width: 300px) {
+    .text {
+        font-size: 1.6vw;
+    }
+}
